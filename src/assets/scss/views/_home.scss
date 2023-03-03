@@ -1,0 +1,282 @@
+@import '../utilities/mixins';
+.home{
+    &__acerca{
+        padding-left: 20px;
+        padding-bottom: 50px;
+        padding-top: 113px;
+        background-color: #ffd5a6;
+        padding-right: 20px;
+        audio{
+            margin-left: 1190px;
+        }
+
+        h1{
+            padding-top: 30px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 20px;
+
+        }
+        video{
+            width: 40%;
+            border-radius: 20px;
+        }
+    }
+    &__personajes{
+        display:flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 85px;
+        background-color: #fee7bf;
+        justify-content: space-between;
+        align-items:center;
+
+        &__caballo{
+            h1{
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                padding-bottom: 30px;
+            }
+
+            p{
+                width:450px;
+                text-align: start;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            &__fotocaballo{
+                width: 300px;
+                height: 300px;
+
+            }
+        }
+        &__peon{
+            padding-top: 120px;
+
+            p{
+                width:400px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: start;
+            }
+            &__fotopeon{
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+    }
+    &__mapas{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 113px;
+        padding-bottom: 20px;
+        text-align: start;
+        background-color: #fefadc;
+        h1{
+            
+            padding-bottom: 30px;
+        }
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-align: start;
+        }
+        .carrousel{
+            width:90%;
+            max-width: 120em;
+            padding-left: 100px;
+            @include neo( 1 , 1em , 1em );
+            overflow: hidden;
+        }
+        .carrousel .grande{
+            width: 200%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            @include neo( 1 , 1em , 1em );
+            padding:2em;
+        
+        
+            transition: all .5s ease;
+            transform: translateX(0%);
+        }
+        .carrousel .img{
+            padding: 2px;
+            width: calc( 100% / 2  - 0em);
+            min-height: 10vh;
+            @include neo( 1 , 1em , 1em );
+        }
+        .carrousel .puntos{
+            width:100%;
+            margin:1em 0 0;
+            padding:.4em;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .carrousel .punto{
+            cursor: pointer;
+            list-style:none;
+            text-align: center;
+            width:  4em;
+            height: 2em;
+            margin: 1em 1em 0;
+            @include neo( 1 , 1em , .6em );
+        }
+        .carrousel .punto.activo{
+            background-color: lightblue;
+        }
+        
+}
+
+    
+}
+
+@media (max-width:687px){
+    .home{
+        &__acerca{
+            padding-left: 20px;
+            padding-bottom: 50px;
+            padding-top: 342px;
+            background-color: #ffd5a6;
+            padding-right: 20px;
+            audio{
+                margin-left: 320px;
+            }
+            h1{
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-bottom: 20px;
+    
+            }
+            video{
+                width: 60%;
+                border-radius: 20px;
+            }
+        }
+        &__personajes{
+            display:flex;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 320px;
+            background-color: #fee7bf;
+            justify-content: space-between;
+            align-items:center;
+    
+            &__caballo{
+                h1{
+                    font-size: 25px;
+                    font-family: 'Times New Roman', Times, serif;
+                    padding-bottom: 30px;
+                }
+    
+                p{
+                    width:300px;
+                    text-align: start;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 15px;
+                }
+                &__fotocaballo{
+                    width: 250px;
+                    height: 250px;
+    
+                }
+            }
+            &__peon{
+                padding-top: 120px;
+    
+                p{
+                    width:350px;
+                    font-family:Arial, Helvetica, sans-serif;
+                    font-size: 15px;
+                    text-align: start;
+                }
+                &__fotopeon{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+    
+        }
+        &__mapas{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 340px;
+            padding-bottom: 20px;
+            text-align: start;
+            background-color: #fefadc;
+            h1{
+                
+                padding-bottom: 30px;
+            }
+            p{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: start;
+            }
+            .carrousel{
+                width:90%;
+                max-width: 120em;
+                padding-left: 60px;
+                @include neo( 1 , 1em , 1em );
+                overflow: hidden;
+            }
+            .carrousel .grande{
+                width: 200%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                @include neo( 1 , 1em , 1em );
+                padding:2em;
+            
+            
+                transition: all .5s ease;
+                transform: translateX(0%);
+            }
+            .carrousel .img{
+                padding: 2px;
+                width: calc( 100% / 2  - 0em);
+                min-height: 10vh;
+                @include neo( 1 , 1em , 1em );
+            }
+            .carrousel .puntos{
+                width:100%;
+                margin:1em 0 0;
+                padding:.4em;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .carrousel .punto{
+                cursor: pointer;
+                list-style:none;
+                text-align: center;
+                width:  4em;
+                height: 2em;
+                margin: 1em 1em 0;
+                @include neo( 1 , 1em , .6em );
+            }
+            .carrousel .punto.activo{
+                background-color: lightblue;
+            }
+            
+    }
+    
+        
+    }
+}

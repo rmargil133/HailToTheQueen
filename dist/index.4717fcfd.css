@@ -1,0 +1,511 @@
+* {
+  box-sizing: border-box;
+  vertical-align: baseline;
+  margin: 0%;
+  padding: 0%;
+}
+
+fieldset {
+  border: 0;
+  margin-left: 2%;
+}
+
+footer {
+  width: 100%;
+  height: 103px;
+  background-color: #ffad5e;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+footer img.logo-instagram, footer img.logo-twitter, footer img.logo-facebook, footer img.logo-youtube {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+footer li {
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  display: inline;
+}
+
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+    height: 11vh;
+    background-color: #317bea;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+
+  footer img.logo-instagram {
+    height: 20px;
+    width: 20px;
+  }
+
+  footer img.logo-twitter, footer img.logo-facebook, footer img.logo-youtube {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  footer li {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    display: inline;
+  }
+}
+
+header {
+  width: 100%;
+  background-color: #ffad5e;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: sticky;
+  top: 0%;
+}
+
+header div {
+  border: 0;
+  align-items: center;
+  margin-left: 2%;
+  display: flex;
+}
+
+header div h1 {
+  color: #000;
+  margin-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display: inline;
+}
+
+header div img.logo-cabecera {
+  width: 90px;
+  height: 90px;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header button {
+  cursor: pointer;
+  background-color: #0000;
+  border-color: #000;
+  border-radius: 3px;
+  margin-right: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 687px) {
+  header button {
+    display: block;
+  }
+}
+
+header button svg {
+  width: 2em;
+  height: 2em;
+}
+
+header nav {
+  z-index: 1;
+}
+
+@media screen and (max-width: 687px) {
+  header nav {
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    display: flex;
+    overflow: hidden;
+  }
+
+  header nav.activo {
+    opacity: 1;
+    height: 32vh;
+    pointer-events: auto;
+  }
+}
+
+header nav ul {
+  flex-flow: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-inline-start: auto;
+  display: flex;
+}
+
+@media screen and (max-width: 687px) {
+  header nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+header nav ul li {
+  margin: .5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+
+@media screen and (max-width: 687px) {
+  header nav ul li {
+    margin: 1em 0;
+  }
+}
+
+header nav ul li a {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+header nav ul li img {
+  width: 180px;
+  height: 100px;
+}
+
+header nav li:hover {
+  background-color: #000;
+  border-radius: 15px;
+}
+
+header nav li:hover a:hover {
+  color: #ffd5a6;
+}
+
+.home__acerca {
+  background-color: #ffd5a6;
+  padding: 113px 20px 50px;
+}
+
+.home__acerca audio {
+  margin-left: 1190px;
+}
+
+.home__acerca h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: Times New Roman, Times, serif;
+  font-size: 25px;
+}
+
+.home__acerca p {
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.home__acerca video {
+  width: 40%;
+  border-radius: 20px;
+}
+
+.home__personajes {
+  background-color: #fee7bf;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 85px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.home__personajes__caballo h1 {
+  padding-bottom: 30px;
+  font-family: Times New Roman, Times, serif;
+  font-size: 25px;
+}
+
+.home__personajes__caballo p {
+  width: 450px;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.home__personajes__caballo__fotocaballo {
+  width: 300px;
+  height: 300px;
+}
+
+.home__personajes__peon {
+  padding-top: 120px;
+}
+
+.home__personajes__peon p {
+  width: 400px;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.home__personajes__peon__fotopeon {
+  width: 300px;
+  height: 300px;
+}
+
+.home__mapas {
+  text-align: start;
+  background-color: #fefadc;
+  padding: 113px 20px 20px;
+}
+
+.home__mapas h1 {
+  padding-bottom: 30px;
+}
+
+.home__mapas p {
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.home__mapas .carrousel {
+  width: 90%;
+  max-width: 120em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  padding-left: 100px;
+  transition: all .4s;
+  overflow: hidden;
+}
+
+.home__mapas .carrousel .grande {
+  width: 200%;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: all .5s;
+  display: flex;
+  transform: translateX(0%);
+}
+
+.home__mapas .carrousel .img {
+  width: 50%;
+  min-height: 10vh;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  padding: 2px;
+  transition: all .4s;
+}
+
+.home__mapas .carrousel .puntos {
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0;
+  padding: .4em;
+  display: flex;
+}
+
+.home__mapas .carrousel .punto {
+  cursor: pointer;
+  text-align: center;
+  width: 4em;
+  height: 2em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .6em .6em 1.2em var(--sombra-ppal), -.6em -.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  margin: 1em 1em 0;
+  list-style: none;
+  transition: all .4s;
+}
+
+.home__mapas .carrousel .punto.activo {
+  background-color: #add8e6;
+}
+
+@media (max-width: 687px) {
+  .home__acerca {
+    background-color: #ffd5a6;
+    padding: 342px 20px 50px;
+  }
+
+  .home__acerca audio {
+    margin-left: 320px;
+  }
+
+  .home__acerca h1 {
+    padding-bottom: 20px;
+    font-family: Times New Roman, Times, serif;
+    font-size: 25px;
+  }
+
+  .home__acerca p {
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .home__acerca video {
+    width: 60%;
+    border-radius: 20px;
+  }
+
+  .home__personajes {
+    background-color: #fee7bf;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+  }
+
+  .home__personajes__caballo h1 {
+    padding-bottom: 30px;
+    font-family: Times New Roman, Times, serif;
+    font-size: 25px;
+  }
+
+  .home__personajes__caballo p {
+    width: 300px;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .home__personajes__caballo__fotocaballo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home__personajes__peon {
+    padding-top: 120px;
+  }
+
+  .home__personajes__peon p {
+    width: 350px;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .home__personajes__peon__fotopeon {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home__mapas {
+    text-align: start;
+    background-color: #fefadc;
+    padding: 340px 20px 20px;
+  }
+
+  .home__mapas h1 {
+    padding-bottom: 30px;
+  }
+
+  .home__mapas p {
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .home__mapas .carrousel {
+    width: 90%;
+    max-width: 120em;
+    color: var(--negro);
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    border-radius: 1em;
+    padding-left: 60px;
+    transition: all .4s;
+    overflow: hidden;
+  }
+
+  .home__mapas .carrousel .grande {
+    width: 200%;
+    color: var(--negro);
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    border-radius: 1em;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    transition: all .5s;
+    display: flex;
+    transform: translateX(0%);
+  }
+
+  .home__mapas .carrousel .img {
+    width: 50%;
+    min-height: 10vh;
+    color: var(--negro);
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    border-radius: 1em;
+    padding: 2px;
+    transition: all .4s;
+  }
+
+  .home__mapas .carrousel .puntos {
+    width: 100%;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 0;
+    padding: .4em;
+    display: flex;
+  }
+
+  .home__mapas .carrousel .punto {
+    cursor: pointer;
+    text-align: center;
+    width: 4em;
+    height: 2em;
+    color: var(--negro);
+    background-color: var(--blanco);
+    box-shadow: .6em .6em 1.2em var(--sombra-ppal), -.6em -.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    border-radius: 1em;
+    margin: 1em 1em 0;
+    list-style: none;
+    transition: all .4s;
+  }
+
+  .home__mapas .carrousel .punto.activo {
+    background-color: #add8e6;
+  }
+}
+
+/*# sourceMappingURL=index.4717fcfd.css.map */

@@ -1,0 +1,113 @@
+@import '../utilities/mixins';
+
+header{
+    width: 100%;
+    background-color: #ffad5e;
+    position: sticky;
+    top: 0%;
+    
+    @include flex( row , wrap , space-between , center);
+
+    div{
+      display: flex;
+      align-items: center;
+      border: 0;
+      margin-left: 2%;
+  
+      h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: x-large;
+        display: inline;
+        margin-left: 15px;
+      }
+      
+      img.logo-cabecera{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        width: 90px;
+        height: 90px;
+      }
+
+    }
+    
+    button{
+      margin-right: 10px;
+      background-color: transparent;
+      border-color: #000000;
+      border-radius: 3px;
+      display: none;
+      cursor: pointer;
+
+      @include media(){
+        display: block;
+      }
+      svg{
+        width: 2em;
+        height: 2em;
+      }
+    }
+
+    nav{
+      z-index: 1;
+
+      @include media(){
+        width: 100%;
+        // display: none;
+        opacity: 0;
+        height: 0vh;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+        @include flex( column , nowrap , center, center);
+
+        &.activo{
+        //display: flex;
+        opacity: 1;
+        height: 32vh;
+        pointer-events: auto;
+        }
+      }
+
+      ul{
+        @include flex( row , wrap , flex-end , center);
+
+        @include media () {
+          flex-direction: column;
+          width: 100%;
+        }
+        margin-inline-start: auto;
+        li{
+          margin: 0.5em;
+          display: inline;
+          padding-left: 10px;
+          padding-right: 10px;
+          @include media(){
+            margin: 1em 0;
+          }
+          a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000000;
+            font-size: 17px;
+            font-weight: bolder;
+            text-decoration: none;
+          }
+          img{
+            width: 180px;
+            height: 100px;
+          }
+        }
+      }
+      li:hover{
+        background-color: black;
+        border-radius: 15px;
+
+        a:hover{
+          color: #ffd5a6;
+        }
+      }
+
+    }
+}
+

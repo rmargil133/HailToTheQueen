@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="./assets/img/icon.png">
+    <link rel="stylesheet" href="assets/scss/main.scss" />
+    <script type="module" src="./assets/js/app.ts"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+    <title>HailToTheQueen</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img class="logo-cabecera" src="./assets/img/LOGO.png" alt="logo cabecera">
+        <h1>HailToTheQueen</h1>
+      </div>  
+      <button class="button">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </button>
+      <nav class="nav">
+          <ul>
+            <li><a href="#Acercade">Acerca de</a></li>
+            <li><a href="#Personajes">Personajes</a></li>
+            <li><a href="#Mapas">Mapas</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="home">
+        <section class="home__acerca" id="Acercade">
+          <audio controls>
+            <source src="./assets/audio/Musica.mp3" type="audio/mp3">
+          </audio>
+          <h1>ACERCA DE</h1>
+            <p>
+              HailToTheQueen es un juego de acción, consta de dos personajes uno malvado y otro bueno. El objetivo del personaje malvado es acabar con el personaje bueno y conquistar la torre Reina, por su parte el objetivo del personaje bueno es proteger la torre de cualquier intruso que quiera alzarse con el control de la misma.
+        </p>
+        <video controls>
+          <source src="assets/video/Shotgun King_ The Final Checkmate - Launch Trailer.mp4" type="video/mp4">
+        </video>
+        </section>
+        <section class="home__personajes" id="Personajes">
+          
+          <div class="home__personajes__caballo">
+            <h1>PERSONAJES</h1> 
+            <p>
+              En HailToTheQueen cuentas con dos personajes, un malvado caballo con el objetivo de acceder a la torre.
+              </p>
+                <img src="assets/img/Personajes/Caballo.svg" alt="Personaje Caballo" class="home__personajes__caballo__fotocaballo"/> 
+          </div>
+          <div class="home__personajes__peon">
+            <p>  
+              Por otro lado a un fuerte peón que tiene como objetivo proteger la torre del malvado caballo.
+              </p> 
+              <img src = "assets/img/Personajes/Peon.svg" alt="Personaje Peón" class="home__personajes__peon__fotopeon"/>
+          </div>
+
+            </section>
+            <section class="home__mapas" id="Mapas">
+              <h1>MAPAS</h1>
+              <p>¿Quieres conocer los mapas disponibles? Aqui tienes una demostración de los tres disponibles</p>
+              <div class="carrousel">
+                <ul class="puntos">
+                  <li class="punto activo">Mapa 1</li>
+                  <li class="punto">Mapa 2</li>
+                  <li class="punto">Mapa 3</li>
+              </ul>
+                <div class="grande">
+                    <img src="assets/img/Mapas/escenario1.3.0.png" alt="Imagen 1" class="img">
+                    <img src="assets/img/Mapas/SegundoEscenario.png" alt="Imagen 2" class="img">
+                    <img src="assets/img/Mapas/torreBG4.png" alt="Imagen 3" class="img">
+                </div>
+            </div>
+              </div>
+  </section>
+
+    </main>
+    <footer>
+      <fieldset>
+        <img class="logo-instagram" src="assets/img/Pie de página/instagram.png" alt="logo instagram">
+        <img class ="logo-twitter" src="assets/img/Pie de página/twitter.png" alt="logo twitter">
+        <img class="logo-youtube" src="assets/img/Pie de página/youtube.png" alt="logo youtube">
+      </fieldset>
+      <ul>
+        <li>Aviso legal</li>
+        <li>Politica de cookies</li>
+      </ul>
+    </footer>
+  </body>
+</html>
